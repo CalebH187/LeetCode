@@ -4,11 +4,11 @@
 class Solution {
 public:
     bool isPowerOfTwo(int n) {
-        int x[31];
-        int y = 2;
-        int MAX = 1073741824;
-        int i = 0;
-        while (y < MAX) {
+        long x[31];
+        long y = 1;
+        long MAX = 1073741824;
+        long i = 0;
+        while (y <= MAX) {
             x[i] = y;
             y = y * 2;
             i++;
